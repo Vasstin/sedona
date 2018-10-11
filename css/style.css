@@ -12,6 +12,22 @@ body  {
   background-color: #ffffff;
   box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
+
+input::-moz-placeholder { 
+  color: #000000;
+  opacity: 1; 
+  
+}
+
+input::-webkit-input-placeholder { 
+  color: #000000; 
+} 
+
+input:-ms-input-placeholder  {
+  color: #000000; 
+  
+}
+
 * {
     box-sizing: border-box;
 }
@@ -326,30 +342,232 @@ input[type="radio"].visually-hidden {
 
 .main-footer p {
     margin: 0;
-    padding: 0;
 }
 
 .main-footer {
-    margin-top: -115px;
+    margin-top: -118px;
     display: flex;
     justify-content: space-between;
-    text-align: center;
     padding-top: 35px;
     padding-bottom: 35px;
+    padding-left: 130px;
+    padding-right: 100px;
     background-color: rgba(255, 255, 255, 0.9);
 }
 
 
 .footer-hashtag {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 26px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     width: 155px;
 }
 
-.footer-social { 
-    width: 160px;
+.footer-social ul { 
+    display: flex;
+    width: 150px;
+    flex-wrap: wrap;
+    justify-content: space-between;
     list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    margin-left: 15px;
+}
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 48px;
+    background-color: #81b3d2;
+}
+
+.footer-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    width: 210px;
+   
+}
+
+.search-form p {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0;
+    margin-bottom: 30px;
+
     
 }
 
-.footer-copyright{ 
-    width: 210px;
+.search-form .container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 55px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    
+}
+
+.search-form input {
+    background-color: #f2f2f2;
+    border: 0;
+    text-transform: inherit;
+    font: inherit;
+    box-sizing: border-box;
+    
+}
+
+.search-item {
+    position: relative;
+    width: 456px;
+    
+}
+
+
+.search-form .date {
+    position: relative;
+    width: 346px;
+    height: 38px;
+    padding: 6px 13px;
+
+    
+}
+.search-form .people {
+    width: 114px;
+    height: 38px;
+    padding: 0;
+    text-align: center;
+}
+
+.search-adults .btn-minus {
+    position: absolute;
+    top: 0px;
+    left: 110px;
+    border: 0;
+    width: 38px;
+    height: 38px;
+    background-color: transparent;
+}
+
+.search-adults .btn-plus {
+     position: absolute;
+    top: 0px;
+    left: 186px;
+    border: 0;
+    width: 38px;
+    height: 38px;
+    background-color: transparent;
+}
+
+.search-child  .btn-minus {
+    position: absolute;
+    top: 0px;
+    left: 342px;
+    border: 0;
+    width: 38px;
+    height: 38px;
+    background-color: transparent;
+}
+
+.search-child  .btn-plus {
+     position: absolute;
+    top: 0px;
+    left: 418px;
+    border: 0;
+    width: 38px;
+    height: 38px;
+    background-color: transparent;
+}
+
+
+.btn-plus::before {
+    content: "";
+    
+    position: absolute;
+    top: 18px;
+    left: 13px;
+    width: 12px;
+    height: 3px;
+    background-color: #a9a9a9;
+    
+}
+
+.btn-plus::after {
+    content: "";
+    
+    position: absolute;
+    top: 18px;;
+    left: 13px;
+    width: 12px;
+    height: 3px;
+    background-color: #a9a9a9;
+    transform: rotate(90deg);
+    
+    
+}
+
+.btn-minus::before {
+    content: "";
+    
+    position: absolute;
+    top: 18px;
+    left: 13px;
+    width: 12px;
+    height: 3px;
+    background-color: #a9a9a9;
+    
+}
+
+.calendar {
+    position: absolute;
+    padding: 0;
+    top: 0;
+    right: 0;
+    border: 0;
+    background-color: transparent;
+    height: 38px;
+    width: 38px;
+
+    
+}
+
+
+.button-find {
+    width: 458px;
+    height: 58px;
+    background-color: #81b3d2;
+    border: 0;
+    color: #fff;
+    font: inherit;
+    text-transform: uppercase;
+}
+
+.search-people p{
+    margin: 0;
+}
+
+.search-people {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 456px;
+    margin-bottom: 55px;;
+}
+
+.search-form .search-adults{
+    width: 224px;    
+}
+
+.search-form .search-child {
+    width: 179px;
 }
