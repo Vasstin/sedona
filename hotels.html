@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Sedona</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body class="inner-page">
+        <header class="main-header">
+            <nav class="main-nav">
+                <ul class="site-navigation">
+                    <li><a href="info.html">Информация</a></li>
+                    <li><a href="media.html">Фото и Видео</a></li>
+                    <li><a class="main-logo">
+                    <img src="img/main-logo.png" width="140" height="70" alt="City of Sedona">
+                    </a>
+                    </li>
+                    <li><a href="map.html">Карта штата</a></li>
+                    <li><a href="hotels.html">Гостиницы</a></li>
+                </ul>
+            </nav>
+            </header>
+            <main>
+              <section class="filters">
+                <h2 class="visually-hidden">Фильтры предложений</h2>
+                <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                  <fieldset class="infrastructure">
+                    <legend>Инфраструктура:</legend>
+                    <ul>
+                        <li  class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pull" id="filter-pull" checked>
+                         <label for="filter-pull">Бассейн</label>   
+                        </li>
+                        <li  class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="parking" id="filter-parking">   
+                         <label for="filter-parking">Парковка</label>  
+                        </li>
+                        <li  class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="wifi" id="filter-wifi">
+                         <label for="filter-wifi">WI-FI</label>   
+                        </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset class="house-type">
+                    <legend>Тип жилья:</legend>
+                    <ul>
+                        <li  class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hotel" id="filter-hotel" checked>
+                         <label for="filter-hotel">Гостиница</label>   
+                        </li>
+                        <li  class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel">   
+                         <label for="filter-motel">Мотель</label>  
+                        </li>
+                        <li  class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments">
+                         <label for="filter-apartments">Апартаменты</label>   
+                        </li>
+                    </ul>
+                
+                  </fieldset>
+                  <div class="filter-range">
+                    <p class="filter-range-title">Стоимость в сутки (Р):</p>
+                    <div class="price-controls">
+                      <label class="min-price">от<input type="text" name="min-price" value="0"></label>
+                      <label class="max-price">до<input type="text" name="max-price" value="0"></label>
+                    </div>
+                    <div class="range-controls">
+                      <div class="scale">
+                        <div class="bar"></div>
+                      </div>
+                      <div class="range-toggle range-toggle-min"></div>
+                      <div class="range-toggle range-toggle-max"></div>
+                    </div>
+                    <button class="btn-transparent" type="submit">Показать</button>
+                  </div>
+              
+                </form>
+              </section>
+            </main>
+    </body>
+    
+</html>

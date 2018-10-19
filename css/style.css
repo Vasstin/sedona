@@ -571,3 +571,23 @@ input[type="radio"].visually-hidden {
 .search-form .search-child {
     width: 179px;
 }
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  background-image: url("../img/bg2.jpg");
+  background-position: 0 -55px;
+  background-repeat: no-repeat;
+}
+
+.filter .infrastructure {
+  width: 315px;
+}
+
+.filter .house-type {
+  width: 315px;
+}
+
+.filter .filter-range {
+  width: 330px;
+}
