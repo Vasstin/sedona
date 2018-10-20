@@ -590,14 +590,14 @@ input[type="radio"].visually-hidden {
 }
 
 .filter .infrastructure {
-  width: 315px;
+  width: 255px;
   border: none;
   margin: 0;
   padding: 0;
 }
 
 .filter .house-type {
-  width: 315px;
+  width: 255px;
   border: none;
   margin: 0;
   padding: 0;
@@ -650,17 +650,42 @@ fieldset ul {
 
 }
 
-.filter-input-checkbox:checked +label::after {
+.filter-input-checkbox:checked:disabled +label::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -38px;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/dis-checkbox-on.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  box-sizing: border-box;
+}
+
+.filter-input-checkbox:disabled +label::before {
   content: "";
   position: absolute;
   top: -3px;
   left: -38px;
   width: 23px;
   height: 23px;
-  background-image: url(../img/checkbox-on.svg);
+  background-image: url(../img/dis-checkbox-off.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
   box-sizing: border-box;
 
 }
 
+.filter-input-checkbox:checked +label::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -38px;
+  width: 27px;
+  height: 23px;
+  background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  box-sizing: border-box;
+}
