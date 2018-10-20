@@ -573,21 +573,94 @@ input[type="radio"].visually-hidden {
 }
 
 .filters {
-  display: flex;
-  flex-direction: row;
+ 
   background-image: url("../img/bg2.jpg");
   background-position: 0 -55px;
   background-repeat: no-repeat;
 }
 
+.filter {
+  display: flex;
+  /* justify-content: space-around;   */
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 35px;
+  padding-left: 72px;
+  padding-right: 72px;
+}
+
 .filter .infrastructure {
   width: 315px;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .filter .house-type {
   width: 315px;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
+fieldset legend {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+  margin-bottom: 25px;
+}
 .filter .filter-range {
   width: 330px;
 }
+
+fieldset ul {
+  margin: 0;
+  padding: 0;
+  padding-left: 40px;
+  list-style: none;
+}
+
+.filter .filter-option {
+  margin-bottom: 30px;
+}
+
+.filter .filter-option:last-child {
+  margin: 0;
+}
+
+.filter-input:disabled {        /*!!!!!!!!!!!!!!!!!!!!*/
+  color: #6a6a6a;
+}
+
+.filter-input-checkbox +label {
+  position: relative;
+}
+
+.filter-input-checkbox +label::before {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -38px;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-off.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  box-sizing: border-box;
+
+}
+
+.filter-input-checkbox:checked +label::after {
+  content: "";
+  position: absolute;
+  top: -3px;
+  left: -38px;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/checkbox-on.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  box-sizing: border-box;
+
+}
+
