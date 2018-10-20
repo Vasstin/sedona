@@ -84,7 +84,10 @@ input[type="radio"].visually-hidden {
 }
 .site-navigation a {
     display: block;
-    padding: 15px 73px ;
+    width: 239px;
+    height: 56px;
+    text-align: center;
+    padding-top: 15px;
 }
 
 .site-navigation  .main-logo {
@@ -688,4 +691,78 @@ fieldset ul {
   background-repeat: no-repeat;
   background-position: 0 0;
   box-sizing: border-box;
+}
+
+.filter-range-title { 
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.price-controls {
+  width: 314px;
+  position: relative;
+  border: 2px solid #fff;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-bottom: 22px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 22px;
+  top: 6px;
+  right: 155px;
+  background-color: #fff
+}
+
+.price-controls label input {
+  width: 60px;
+  border: none;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  margin-left: 4px;
+}
+
+.price-controls .min-price {
+  margin-left: 65px;
+  
+}
+
+.price-controls .max-price {
+  margin-left: 50px;
+}
+
+.range-controls {
+  
+  margin-bottom: 40px;
+}
+/* 248 */
+.range-controls .scale {
+  width: 317px;
+  height: 2px;
+  background-color: #ffffff;
+  opacity: 0.3;
+
+}
+
+.scale  .bar {
+  width: 248px;
+  height: 2px;
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+
+.btn-transparent {
+  width: 133px;
+  height: 32px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+
+
 }
