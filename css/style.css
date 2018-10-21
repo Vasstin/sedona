@@ -94,6 +94,9 @@ input[type="radio"].visually-hidden {
     padding: 0;
 }
 
+.site-navigation .current-page {
+  color: #766357;
+}
 .slogan {
     display: flex;
     flex-direction: column;
@@ -575,6 +578,10 @@ input[type="radio"].visually-hidden {
     width: 179px;
 }
 
+.container {
+  margin: 0 72px;
+}
+
 .filters {
  
   background-image: url("../img/bg2.jpg");
@@ -582,24 +589,34 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
 }
 
-.filter {
+.wrapper {
   display: flex;
-  /* justify-content: space-around;   */
-  color: #fff;
-  padding-top: 30px;
-  padding-bottom: 35px;
-  padding-left: 72px;
-  padding-right: 72px;
+  justify-content: space-between; 
 }
 
-.filter .infrastructure {
+.filter-wrapper {
+  display: flex;
+  width: 518px;
+}
+
+
+
+.filter {
+  
+  color: #fff;
+  padding-top: 28px;
+  padding-bottom: 35px;
+
+}
+
+ .infrastructure {
   width: 255px;
   border: none;
   margin: 0;
   padding: 0;
 }
 
-.filter .house-type {
+ .house-type {
   width: 255px;
   border: none;
   margin: 0;
@@ -613,13 +630,16 @@ fieldset legend {
   margin-bottom: 25px;
 }
 .filter .filter-range {
-  width: 330px;
+  width: 314px;
 }
 
 fieldset ul {
   margin: 0;
   padding: 0;
   padding-left: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
   list-style: none;
 }
 
@@ -631,7 +651,7 @@ fieldset ul {
   margin: 0;
 }
 
-.filter-input:disabled {        /*!!!!!!!!!!!!!!!!!!!!*/
+.filter-input:disabled {       
   color: #6a6a6a;
 }
 
@@ -693,7 +713,9 @@ fieldset ul {
   box-sizing: border-box;
 }
 
-.filter-range-title { 
+.filter-range-title {
+  margin: 0;
+  margin-bottom: 9px;
   font-size: 16px;
   font-weight: 700;
   line-height: 21px;
@@ -703,9 +725,13 @@ fieldset ul {
   width: 314px;
   position: relative;
   border: 2px solid #fff;
-  padding-top: 7px;
-  padding-bottom: 7px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   margin-bottom: 22px;
+}
+
+.price-controls label {
+  cursor: pointer;
 }
 
 .price-controls::after {
@@ -718,51 +744,107 @@ fieldset ul {
   background-color: #fff
 }
 
+.price-controls .min-price
+{
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls .max-price  {
+  width: 90px;
+  padding-left: 55px;
+}
+
 .price-controls label input {
   width: 60px;
   border: none;
-  background: transparent;
+  background: none;
+  outline: none;
   color: inherit;
   font: inherit;
   margin-left: 4px;
 }
 
-.price-controls .min-price {
-  margin-left: 65px;
-  
-}
-
-.price-controls .max-price {
-  margin-left: 50px;
-}
-
 .range-controls {
-  
+  position: relative;
   margin-bottom: 40px;
 }
-/* 248 */
-.range-controls .scale {
-  width: 317px;
-  height: 2px;
-  background-color: #ffffff;
-  opacity: 0.3;
 
+.range-controls .scale {
+  width: 314px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .scale  .bar {
   width: 248px;
   height: 2px;
   background-color: #ffffff;
-  opacity: 1;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  box-sizing: content-box;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 248px;
+}
+
+.range-toggle:hover {
+  border: 9px solid white;
 }
 
 
 .btn-transparent {
+  display: block;
+  margin: 0 auto;
   width: 133px;
   height: 32px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  text-transform: uppercase;
   background: transparent;
   border: 2px solid #fff;
+  border-radius: 2px;
   color: #fff;
+}
 
+.btn-transparent:hover,
+.btn-transparent:focus {
+  background-color: #fff;
+  color: #000;
+}
 
+.results-wrapper {
+  width: 528px;
+  display: flex;
+}
+.results-wrapper span {
+  display: block;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  padding-top: 29px;
+  padding-bottom: 30px;
+}
+
+.results-wrapper p {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
 }
