@@ -13,19 +13,22 @@
                 <ul class="site-navigation">
                     <li><a href="info.html">Информация</a></li>
                     <li><a href="media.html">Фото и Видео</a></li>
-                    <li><a class="main-logo">
+                    <li><a class="main-logo" href="index.html">
                     <img src="img/main-logo.png" width="140" height="70" alt="City of Sedona">
                     </a>
                     </li>
                     <li><a href="map.html">Карта штата</a></li>
-                    <li><a href="hotels.html">Гостиницы</a></li>
+                    <li><a class="current-page" href="#">Гостиницы</a></li>
                 </ul>
             </nav>
             </header>
             <main>
               <section class="filters">
-                <h2 class="visually-hidden">Фильтры предложений</h2>
+                <div class="container">
+                  <h2 class="visually-hidden">Фильтры предложений</h2>
                 <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                  <div class="wrapper">
+                    <div class="filter-wrapper">
                   <fieldset class="infrastructure">
                     <legend>Инфраструктура:</legend>
                     <ul>
@@ -51,21 +54,22 @@
                          <label for="filter-hotel">Гостиница</label>   
                         </li>
                         <li  class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel">   
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="motel" id="filter-motel" checked>   
                          <label for="filter-motel">Мотель</label>  
                         </li>
                         <li  class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="apartments" id="filter-apartments" checked>
                          <label for="filter-apartments">Апартаменты</label>   
                         </li>
                     </ul>
                 
                   </fieldset>
+                </div>
                   <div class="filter-range">
                     <p class="filter-range-title">Стоимость в сутки (Р):</p>
                     <div class="price-controls">
                       <label class="min-price">от<input type="text" name="min-price" value="0"></label>
-                      <label class="max-price">до<input type="text" name="max-price" value="0"></label>
+                      <label class="max-price">до<input type="text" name="max-price" value="3000"></label>
                     </div>
                     <div class="range-controls">
                       <div class="scale">
@@ -76,8 +80,24 @@
                     </div>
                     <button class="btn-transparent" type="submit">Показать</button>
                   </div>
-              
+                </div>
                 </form>
+              </div>
+              </section>
+              <section class="results" >
+                <div class="container">
+                  <div class="results-wrapper">
+                    <span>Найдено: 3</span>
+                    <p>Сортировка</p>
+                    <ul>
+                      <li>По цене</li>
+                      <li>По типу</li>
+                      <li>По рейтингу</li>
+                    </ul>
+                  </div>
+                  <button class="btn-results btn-up" type="button"></button>
+                  <button class="btn-results btn-down" type="button"></button>
+                </div>
               </section>
             </main>
     </body>
