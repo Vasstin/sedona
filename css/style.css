@@ -1097,6 +1097,16 @@ fieldset ul {
   color: rgba(255, 255, 255, 0.3);
   background-color: #503e33;
 }
+
+.info-wrapper .hotel-title:focus,
+.info-wrapper .hotel-title:hover  {
+  color: #81b3d2;
+}
+
+.info-wrapper .hotel-title:active {
+  opacity: 0.3;
+  color: #000000;}
+
 .rate {
   width: 111px;
 }
