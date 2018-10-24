@@ -1100,3 +1100,21 @@ fieldset ul {
 .rate {
   width: 111px;
 }
+
+.rate p {
+  margin: 0;
+  padding-left: 14px;
+  padding-right: 14px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  background-color: #f2f2f2;
+}
+
+.rate .img-wrapper {
+  text-align: right;
+  margin-bottom: 45px;
+}
