@@ -108,6 +108,11 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation .current-page {
+  display: block;
+  width: 239px;
+  height: 56px;
+  text-align: center;
+  padding-top: 15px;
   color: #766357;
 }
 .slogan {
@@ -340,6 +345,10 @@ input[type="radio"].visually-hidden {
   margin-right: 316px;
 }
 
+.btn-close {
+  display: none;
+}
+
 .button-search:hover,
 .button-search:focus {
   background-color: #604e43;
@@ -361,12 +370,15 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
+
+
 .map {
-  background-image: url("../img/map.jpg");
-  background-repeat: no-repeat;
-  background-position: 0 0px;
-  width: 100%;
-  min-height: 594px;
+  position: absolute;
+  z-index: 99;
+}
+
+.map img {
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 
 .main-footer p {
@@ -374,13 +386,17 @@ input[type="radio"].visually-hidden {
 }
 
 .main-footer {
-  margin-top: -118px;
+  position: relative;
+  top: 476px;
+  z-index: 100;
+  width: 1200px;
   display: flex;
   justify-content: space-between;
   padding-top: 35px;
-  padding-bottom: 35px;
+  padding-bottom: 26px;
   padding-left: 130px;
   padding-right: 100px;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   background-color: rgba(255, 255, 255, 0.9);
 }
 
@@ -1229,6 +1245,7 @@ fieldset ul {
 
 .inner-page .main-footer {
   margin-top: 0;
+  top: 0;
   
 }
 
